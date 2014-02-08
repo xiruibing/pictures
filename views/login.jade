@@ -1,0 +1,37 @@
+//
+   Created by dell on 14-2-8.
+head
+    title 登录
+    link(rel='stylesheet', href='/metro/css/metro-bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/picture-core.css')
+    script(src='/metro/js/jquery/jquery.min.js')
+    script(src='/metro/js/jquery/jquery.widget.min.js')
+    script(src='/metro/js/metro.min.js')
+body(class='metro')
+    div(class='main')
+        div(class='logo')
+        div(class='login')
+            form#logfrm(method='post',action='')
+                fieldset
+                    legend 登录
+                    label 用户名
+                    div(class='input-control text',data-role='input-control')
+                        input#username(type='text', name='username', placeholder='用户名或邮箱')
+                        button(type='button', class='btn-clear', tabindex='-1')
+
+                    label 密码
+                    div(class='input-control password',data-role='input-control')
+                        input#password(type='text', name='password', placeholder='密码')
+                        button(type='button', class='btn-reveal', tabindex='-1')
+                    div(class='input-control checkbox', data-role='input-control')
+                        label(class='inline-block')
+                            input(type='checkbox')
+                            span(class='check')
+                            记住密码
+
+                    div
+                    div(class='clearfix')
+
+                    button(class='button default') 登录
+
+                    div(style='margin-top: 20px')
