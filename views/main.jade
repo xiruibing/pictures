@@ -1,0 +1,98 @@
+doctype html
+head
+    title 登录
+    link(rel='stylesheet', href='/metro/css/metro-bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/picture-core.css')
+    script(src='/metro/js/jquery/jquery.min.js')
+    script(src='/metro/js/jquery/jquery.widget.min.js')
+    script(src='/metro/js/metro.min.js')
+body(class='metro')
+    div
+        nav(class='navigation-bar')
+            div(class='navigation-bar-content')
+                a(href='/', class='element')
+                    span(class='icon-grid-view')
+                    |METRO UI CSS <sup>2.0</sup>
+                span(class='element-divider')
+                a(class='pull-menu', href='#')
+
+                ul(class='element-menu')
+                    li
+                        a(class='dropdown-toggle', href='#') Base CSS
+                        ul(class='dropdown-menu', data-role='dropdown', style='display: none;')
+                            li
+                                a(href='requirements.html') Requirements
+                            li
+                                a(href='#', class='dropdown-toggle') General CSS
+                                ul(class='dropdown-menu', data-role='dropdown')
+                                    li
+                                        a(href='global.html') Global styles
+                                    li
+                                        a(href='grid.html') Grid system
+                                    div(class='divider')
+                                    li
+                                        a(href='typography.html') Typography
+                                    li
+                                        a(href='tables.html') Tables
+                                    li
+                                        a(href='forms.html') Forms
+                                    li
+                                        a(href='buttons.html') Buttons
+                                    li
+                                        a(href='images.html') Images
+                            li(class='divider')
+                            li
+                                a(href='responsive.html') Responsive
+                            li(class='disabled')
+                                a(href='layouts.html') Layouts and templates
+                            li(class='divider')
+                            li
+                                a(href='icons.html') Icons
+                    li
+                        a(class='dropdown-toggle', href='#') Community
+                        ul(class='dropdown-menu', data-role='dropdown')
+                            li(class='disabled')
+                                a(href='http://blog.metroui.net') Blog
+                            li(class='disabled')
+                                a(href='http://forum.metroui.net') Community Forum
+                            li(class='divider')
+                            li
+                                a(href='https://github.com/olton/Metro-UI-CSS') Github
+                            li(class='divider')
+                            li
+                                a(href='https://github.com/olton/Metro-UI-CSS/blob/master/LICENSE') License
+
+                div(class='no-tablet-portrait')
+                    span(class='element-divider')
+                    a(class='element brand', href='#')
+                        span(class='icon-spin')
+                    a(class='element brand', href='#')
+                        span(class='icon-printer')
+                    span(class='element-divider')
+
+                    div(class='element input-element')
+                        form
+                            div(class='input-control text')
+                                input(type='text', placeholder='Search...')
+                                button(class='btn-search')
+
+                    div(class='element place-right')
+                        a(class='dropdown-toggle', href='#')
+                            span(class='icon-cog')
+                        ul(class='dropdown-menu place-right', data-role='dropdown')
+                            li
+                                a(href='#') Products
+                            li
+                                a(href='#') Download
+                            li
+                                a(href='#') Support
+                            li
+                                a(href='#') Buy Now
+
+                    span(class='element-divider place-right')
+                    button(class='element image-button image-left place-right')
+                        Sergey Pimenov
+                        img(src='images/me.jpg')
+
+
+    include album
