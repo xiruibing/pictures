@@ -1,0 +1,33 @@
+div
+    table#dataTables-1(class='table striped hovered dataTable')
+        thead
+            tr
+                th(class='text-left') Engine
+                th(class='text-left') Browser
+                th(class='text-left') Platform
+                th(class='text-left') Version
+                th(class='text-left') CSS grade
+        tbody
+        tfoot
+            tr
+                th(class='text-left') Engine
+                th(class='text-left') Browser
+                th(class='text-left') Platform
+                th(class='text-left') Version
+                th(class='text-left') CSS grade
+
+
+script(type='text/javascript').
+    $(function(){
+        $('#dataTables-1').dataTable( {
+            "bProcessing": true,
+            "sAjaxSource": "data/dataTables-objects.txt",
+            "aoColumns": [
+                { "mData": "engine" },
+                { "mData": "browser" },
+                { "mData": "platform" },
+                { "mData": "version" },
+                { "mData": "grade" }
+            ]
+        } );
+    });

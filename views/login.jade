@@ -1,5 +1,6 @@
 doctype html
 head
+    meta(name='viewport', content='width=device-width; initial-scale=1.4; minimum-scale=1.0; maximum-scale=2.0')
     title 登录
     link(rel='stylesheet', href='/metro/css/metro-bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/picture-core.css')
@@ -10,7 +11,7 @@ body(class='metro')
     div(class='main')
         div(class='logo')
         div(class='login')
-            form#logfrm(method='get',action='main')
+            form#logfrm(method='post',action='user/login')
                 fieldset
                     legend 登录
                     label 用户名
